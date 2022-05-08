@@ -4,9 +4,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header class="home-header">
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="100" height="100" />
     <h1>This is my very first Vue.js app</h1>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="100" height="100" />
   </header>
   <main class="home-page">
     <nav>
@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
           width="150"
           height="150"
         />
-        <h2>Football League</h2>
+        <RouterLink to="/">Football League</RouterLink>
       </div>
       <div>
         <RouterLink to="/teams">teams</RouterLink>
@@ -43,7 +43,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .home-header {
-  padding: 30px;
+  padding: 10px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;

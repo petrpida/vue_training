@@ -15,7 +15,7 @@
             </thead>
             <tbody>
                 <tr v-for="(item, index) in teamsCounted">
-                    <td>{{ index + 1 }}</td>
+                    <td>{{ `${index + 1}.` }}</td>
                     <td>{{ item.name }}</td>
                     <td>{{ item.gamesPlayed }}</td>
                     <td>{{ item.wins }}</td>
@@ -133,7 +133,8 @@ export default {
     background: #cdcdcd;
     border: none;
     text-align: center;
-    padding: 1em;
+    padding: 2em;
+    font-weight: bold;
 }
 
 .container table tr {
